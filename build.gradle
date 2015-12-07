@@ -45,15 +45,6 @@ pluginBundle {
     }
 }
 
-task checkJavaVersion << {
-    if (!JavaVersion.current().isJava6()) {
-        throw new GradleException(
-                "JDK 1.6 is required (found ${JavaVersion.current()}).")
-    }
-}
-
-compileJava.dependsOn checkJavaVersion
-
 compileGroovy {
     sourceCompatibility = JavaVersion.VERSION_1_6
     targetCompatibility = JavaVersion.VERSION_1_6
