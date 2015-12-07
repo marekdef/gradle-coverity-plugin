@@ -187,7 +187,7 @@ class EmitConfigSet {
             }
 
             emitConfig.classpath +=
-                    project.files(plugin.androidBuilder.bootClasspath)
+                    project.files(plugin.androidBuilder.getBootClasspath(true))
 
             emitConfigs += emitConfig
         }
