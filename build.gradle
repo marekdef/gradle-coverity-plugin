@@ -11,9 +11,10 @@ buildscript {
 
 apply plugin: 'groovy'
 apply plugin: 'com.gradle.plugin-publish'
+apply plugin: 'maven'
 
-group = 'com.github.mjdetullio.gradle'
-version = '1.0.7'
+group = 'com.github.marekdef'
+version = '1.0.8-SNAPSHOT'
 
 description = 'A plugin for integrating with Coverity, a static analysis ' +
         'platform.  Adds tasks to the project that will emit, analyze, and ' +
